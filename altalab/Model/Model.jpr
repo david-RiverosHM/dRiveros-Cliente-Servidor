@@ -72,7 +72,7 @@
    </list>
    <value n="DCProject" v="true"/>
    <value n="defaultPackage" v="model"/>
-   <value n="jbo.CustomContextMenus" v="true"/>
+   <value n="jbo.JpxName" v="model.Model"/>
    <value n="jbo.NoAttrEnumClasses" v="true"/>
    <value n="JboProject" v="true"/>
    <hash n="oracle.adfdtinternal.model.ide.settings.ADFMSettings">

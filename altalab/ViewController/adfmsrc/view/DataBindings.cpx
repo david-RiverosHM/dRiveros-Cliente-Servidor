@@ -3,6 +3,8 @@
              SeparateXMLFiles="false" Package="view" ClientType="Generic">
   <pageMap>
     <page path="/untitled1.jsf" usageId="view_untitled1PageDef"/>
+    <page path="/MDavidDashboard.jsf" usageId="view_MDavidDashboardPageDef"/>
+    <page path="/MDaviddashboard.jsf" usageId="view_MDaviddashboardPageDef"/>
   </pageMap>
   <definitionFactories>
     <factory nameSpace="http://xmlns.oracle.com/adfm/dvt"
@@ -10,6 +12,8 @@
   </definitionFactories>
   <pageDefinitionUsages>
     <page id="view_untitled1PageDef" path="view.pageDefs.untitled1PageDef"/>
+    <page id="view_MDavidDashboardPageDef" path="view.pageDefs.MDavidDashboardPageDef"/>
+    <page id="view_MDaviddashboardPageDef" path="view.pageDefs.MDaviddashboardPageDef"/>
   </pageDefinitionUsages>
   <dataControlUsages>
     <dc id="HRService" path="oracle.workbetter.model.HRService"/>
