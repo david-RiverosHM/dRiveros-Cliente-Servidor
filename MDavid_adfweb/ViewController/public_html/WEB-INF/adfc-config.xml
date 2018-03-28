@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<adfc-config xmlns="http://xmlns.oracle.com/adf/controller" version="1.2">
+  <view id="vc_Main">
+    <page>/vc_Main.jsf</page>
+  </view>
+  <view id="vw01_star">
+    <page>/vw01_star.jsf</page>
+  </view>
+  <view id="vw02_holamundo">
+    <page>/vw02_holamundo.jsf</page>
+  </view>
+  <control-flow-rule id="__1">
+    <from-activity-id>vc_Main</from-activity-id>
+    <control-flow-case id="__2">
+      <from-outcome>go_pag1</from-outcome>
+      <to-activity-id>vw01_star</to-activity-id>
+    </control-flow-case>
+  </control-flow-rule>
+  <control-flow-rule id="__3">
+    <from-activity-id>vw01_star</from-activity-id>
+    <control-flow-case id="__4">
+      <from-outcome>go_main</from-outcome>
+      <to-activity-id>vc_Main</to-activity-id>
+    </control-flow-case>
+    <control-flow-case id="__5">
+      <from-outcome>go_pag2</from-outcome>
+      <to-activity-id>vw02_holamundo</to-activity-id>
+    </control-flow-case>
+  </control-flow-rule>
+  <control-flow-rule id="__6">
+    <from-activity-id>vw02_holamundo</from-activity-id>
+    <control-flow-case id="__7">
+      <from-outcome>go_pag1</from-outcome>
+      <to-activity-id>vw01_star</to-activity-id>
+    </control-flow-case>
+    <control-flow-case id="__8">
+      <from-outcome>go_main</from-outcome>
+      <to-activity-id>vc_Main</to-activity-id>
+    </control-flow-case>
+  </control-flow-rule>
+  <control-flow-rule id="__10">
+    <from-activity-id>vc_Main</from-activity-id>
+    <control-flow-case id="__11">
+      <from-outcome>go_principal</from-outcome>
+      <to-activity-id>vc_Main</to-activity-id>
+    </control-flow-case>
+  </control-flow-rule>
+</adfc-config>
