@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<pageDefinition xmlns="http://xmlns.oracle.com/adfm/uimodel" version="12.2.1.9.14" id="DmamaniPageDef"
+                Package="s05.view.pageDefs">
+  <parameters/>
+  <executables>
+    <variableIterator id="variables"/>
+    <taskFlow id="DM_tashflow_login1" taskFlowId="/WEB-INF/DM_tashflow_login.xml#DM_tashflow_login"
+              activation="deferred" xmlns="http://xmlns.oracle.com/adf/controller/binding">
+      <parameters>
+        <parameter id="inputTitle" value="left.Panel"/>
+      </parameters>
+    </taskFlow>
+    <taskFlow id="DM_tashflow_login2" taskFlowId="/WEB-INF/DM_tashflow_login.xml#DM_tashflow_login"
+              activation="deferred" xmlns="http://xmlns.oracle.com/adf/controller/binding">
+      <parameters>
+        <parameter id="inputTitle" value="right.Panel"/>
+      </parameters>
+    </taskFlow>
+  </executables>
+  <bindings/>
+</pageDefinition>

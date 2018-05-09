@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<adfc-config xmlns="http://xmlns.oracle.com/adf/controller" version="1.2">
+  <task-flow-definition id="DM_tashflow_login">
+    <default-activity>tf_</default-activity>
+    <data-control-scope>
+      <shared/>
+    </data-control-scope>
+    <input-parameter-definition id="__1">
+      <name>inputTitle</name>
+      <value>#{pageFlowScope.inputTitle}</value>
+      <class>java.lang.String</class>
+    </input-parameter-definition>
+    <view id="tf_">
+      <page>/view1.jsff</page>
+    </view>
+    <use-page-fragments/>
+  </task-flow-definition>
+</adfc-config>
